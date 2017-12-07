@@ -1,0 +1,57 @@
+MIBBLE INSTALLATION INSTRUCTIONS
+================================
+
+Requirements
+------------
+
+  The following requirements must be met in order to use Mibble:
+
+    o Java runtime compatible with Java 7.
+
+
+Installation
+------------
+
+  All required JAR files are provided in the lib subdirectory:
+
+    o mibble-parser-2.10.1.jar
+      The parser library and app code
+
+    o mibble-mibs-2.10.1.jar
+      The bundled IANA and IETF MIBs
+
+    o snmp6_1.jar
+      The Westhawk SNMP stack (only used by MibbleBrowser)
+
+
+Running
+-------
+
+  Mibble is a library, but provides a number of small apps:
+
+    o MibbleBrowser.jar
+      Contains the MIB browser app and dependencies rolled into a 
+      single JAR file. Double-click to launch.
+
+    o bin/MibbleBrowser.bat (or .sh)
+      An alternative start script for the MIB browser app, using the 
+      JAR files from the lib subdirectory.
+
+    o bin/MibblePrinter.bat (or .sh)
+      Formats (or pretty-prints) one or more MIB files.
+
+    o bin/MibbleValidator.bat (or .sh)
+      Validates the syntax of one or more MIB files.
+
+  The shell scripts finds the required JAR files automatically via 
+  the lib subdirectory and adds them to the CLASSPATH.
+
+
+_____________________________________________________________________
+
+Mibble 2.10.1 (2017-02-20). See https://www.mibble.org/ for more
+information.
+
+Copyright (c) 2002-2017 Per Cederberg. Permission is granted to copy
+this document verbatim in any medium, provided that this copyright
+notice is left intact.

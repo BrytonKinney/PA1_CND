@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was automatically generated. DO NOT EDIT! -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Mibble Installation Instructions</title>
+  </head>
+
+  
+  <body>
+    <section class="header">
+      <div class="banner">
+        <header class="box">
+          <h1 class="name">Mibble Installation Instructions</h1>
+          <p class="tagline">Mibble version 2.10.1 (2017-02-20)</p>
+        </header>
+      </div>
+    </section>
+    <section class="content">
+
+    <h2>Requirements</h2>
+
+    <p>The following requirements must be met in order to use
+    Mibble:</p>
+
+    <ul class="li-fa-chevron li-margin-md">
+      <li>
+        Java runtime compatible with Java 7.
+      </li>
+    </ul>
+
+
+    <h2>Installation</h2>
+
+    <p>All required JAR files are provided in the <code>lib</code>
+    subdirectory:</p>
+
+    <ul class="li-fa-chevron li-margin-md">
+      <li>
+        <b>mibble-parser-2.10.1.jar</b><br/>
+        The parser library and app code
+      </li>
+
+      <li>
+        <b>mibble-mibs-2.10.1.jar</b><br/>
+        The bundled IANA and IETF MIBs
+      </li>
+
+      <li>
+        <b>snmp6_1.jar</b><br/>
+        The Westhawk SNMP stack (only used by MibbleBrowser)
+      </li>
+    </ul>
+
+
+    <h2>Running</h2>
+
+    <p>Mibble is a library, but provides a number of small apps:</p>
+
+    <ul class="li-fa-chevron li-margin-md">
+      <li>
+        <b>MibbleBrowser.jar</b><br/>
+        Contains the MIB browser app and dependencies rolled into a
+        single JAR file. Double-click to launch.
+      </li>
+
+      <li>
+        <b>bin/MibbleBrowser.bat (or .sh)</b><br/>
+        An alternative start script for the MIB browser app, using
+        the JAR files from the <code>lib</code> subdirectory.
+      </li>
+
+      <li>
+        <b>bin/MibblePrinter.bat (or .sh)</b><br/>
+        Formats (or pretty-prints) one or more MIB files.
+      </li>
+
+      <li>
+        <b>bin/MibbleValidator.bat (or .sh)</b><br/>
+        Validates the syntax of one or more MIB files.
+      </li>
+    </ul>
+
+    <p>The shell scripts finds the required JAR files automatically via
+    the <code>lib</code> subdirectory and adds them to the
+    <code>CLASSPATH</code>.</p>
+
+  
+      <hr/>
+
+      <p class="small">Mibble 2.10.1 (2017-02-20). See <a href="https://www.mibble.org/">www.mibble.org</a> for more information.</p>
+
+      <p class="small">Copyright &copy; 2002-2017 Per Cederberg. Permission
+      is granted to copy this document verbatim in any medium, provided
+      that this copyright notice is left intact.</p>
+
+    </section>
+  </body>
+</html>
